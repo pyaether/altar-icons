@@ -49,7 +49,7 @@ class CrossIcon(Svg):
         self.children = [Path(d="M18 6 6 18"), Path(d="m6 6 12 12")]
 
 
-class DotIcon(Svg):
+class DotFilledIcon(Svg):
     def __init__(self, **attributes: Dict[str, Any]):
         class_attribute = attributes.pop("_class", "")
         width = attributes.pop("width", "16")
