@@ -10,7 +10,7 @@ from .abstract import (
 from .arrows import ArrowLeftIcon, ArrowRightIcon, ChevronDownIcon
 from .objects import BanknoteIcon, EyeIcon, EyeOffIcon, PencilIcon, TrashIcon
 
-__version__ = "0.0.1a0"
+__version__ = "0.0.1a1"
 __all__ = [
     "ArrowRightIcon",
     "ArrowLeftIcon",
