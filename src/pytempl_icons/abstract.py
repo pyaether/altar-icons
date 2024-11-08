@@ -204,3 +204,30 @@ class HamburgerMenuIcon(Svg):
             Line(x1="4", x2="20", y1="6", y2="6"),
             Line(x1="4", x2="20", y1="18", y2="18"),
         ]
+
+
+class EllipsisIcon(Svg):
+    def __init__(self, **attributes: Dict[str, Any]):
+        class_attribute = attributes.pop("_class", "")
+        width = attributes.pop("width", "16")
+        height = attributes.pop("height", "16")
+        stroke_width = attributes.pop("stroke_width", "1.5")
+
+        super().__init__(
+            _class=class_attribute,
+            width=width,
+            height=height,
+            viewBox="0 0 24 24",
+            fill="none",
+            stroke="currentColor",
+            stroke_width=stroke_width,
+            stroke_linecap="round",
+            stroke_linejoin="round",
+            **attributes,
+        )
+
+        self.children = [
+            Circle(cx="12", cy="12", r="1"),
+            Circle(cx="19", cy="12", r="1"),
+            Circle(cx="5", cy="12", r="1"),
+        ]
