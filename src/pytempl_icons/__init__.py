@@ -1,4 +1,5 @@
 from .abstract import (
+    CheckCircleBigIcon,
     CheckIcon,
     CirclePlusIcon,
     CrossIcon,
@@ -24,6 +25,7 @@ __all__ = [
     "ArrowRightIcon",
     "ArrowLeftIcon",
     "BanknoteIcon",
+    "CheckCircleBigIcon",
     "CheckIcon",
     "ChevronDownIcon",
     "ChevronLeftIcon",

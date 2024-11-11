@@ -26,6 +26,32 @@ class CheckIcon(Svg):
         self.children = [Path(d="M20 6 9 17l-5-5")]
 
 
+class CheckCircleBigIcon(Svg):
+    def __init__(self, **attributes: Dict[str, Any]):
+        class_attribute = attributes.pop("_class", "")
+        width = attributes.pop("width", "16")
+        height = attributes.pop("height", "16")
+        stroke_width = attributes.pop("stroke_width", "1.5")
+
+        super().__init__(
+            _class=class_attribute,
+            width=width,
+            height=height,
+            viewBox="0 0 24 24",
+            fill="none",
+            stroke="currentColor",
+            stroke_width=stroke_width,
+            stroke_linecap="round",
+            stroke_linejoin="round",
+            **attributes,
+        )
+
+        self.children = [
+            Path(d="M21.801 10A10 10 0 1 1 17 3.335"),
+            Path(d="m9 11 3 3L22 4"),
+        ]
+
+
 class CrossIcon(Svg):
     def __init__(self, **attributes: Dict[str, Any]):
         class_attribute = attributes.pop("_class", "")
