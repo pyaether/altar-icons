@@ -7,6 +7,7 @@ from .abstract import (
     EllipsisIcon,
     ExclamationTriangleIcon,
     HamburgerMenuIcon,
+    LoaderCircleIcon,
     PlusIcon,
     RefreshCWIcon,
 )
@@ -20,7 +21,7 @@ from .arrows import (
 )
 from .objects import BanknoteIcon, EyeIcon, EyeOffIcon, PencilIcon, TrashIcon
 
-__version__ = "0.0.1a5"
+__version__ = "0.0.1a6"
 __all__ = [
     "ArrowRightIcon",
     "ArrowLeftIcon",
@@ -39,6 +40,7 @@ __all__ = [
     "EyeIcon",
     "EyeOffIcon",
     "HamburgerMenuIcon",
+    "LoaderCircleIcon",
     "PencilIcon",
     "PlusIcon",
     "RefreshCWIcon",
