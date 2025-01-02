@@ -21,7 +21,7 @@ from .arrows import (
 )
 from .objects import BanknoteIcon, EyeIcon, EyeOffIcon, PencilIcon, TrashIcon
 
-__version__ = "0.0.1a6"
+__version__ = "0.1.0"
 __all__ = [
     "ArrowRightIcon",
     "ArrowLeftIcon",
