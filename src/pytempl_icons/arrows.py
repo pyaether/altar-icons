@@ -1,141 +1,62 @@
-from typing import Any, Dict
+from pytempl.tags.svg import Path
 
-from pytempl.tags import Path, Svg
+from ._base import BaseSVGIconElement, SVGIconAttributes
+
+try:
+    from typing import Unpack
+except ImportError:
+    from typing_extensions import Unpack
 
 
-class ArrowLeftIcon(Svg):
-    def __init__(self, **attributes: Dict[str, Any]):
-        class_attribute = attributes.pop("_class", "")
-        width = attributes.pop("width", "16")
-        height = attributes.pop("height", "16")
-        stroke_width = attributes.pop("stroke_width", "1.5")
+class ArrowLeftIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
-        super().__init__(
-            _class=class_attribute,
-            width=width,
-            height=height,
-            viewBox="0 0 24 24",
-            fill="none",
-            stroke="currentColor",
-            stroke_width=stroke_width,
-            stroke_linecap="round",
-            stroke_linejoin="round",
-            **attributes,
-        )
+        super().__init__(**attributes_with_defaults)
 
         self.children = [Path(d="M6 8L2 12L6 16"), Path(d="M2 12H22")]
 
 
-class ArrowRightIcon(Svg):
-    def __init__(self, **attributes: Dict[str, Any]):
-        class_attribute = attributes.pop("_class", "")
-        width = attributes.pop("width", "16")
-        height = attributes.pop("height", "16")
-        stroke_width = attributes.pop("stroke_width", "1.5")
+class ArrowRightIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
-        super().__init__(
-            _class=class_attribute,
-            width=width,
-            height=height,
-            viewBox="0 0 24 24",
-            fill="none",
-            stroke="currentColor",
-            stroke_width=stroke_width,
-            stroke_linecap="round",
-            stroke_linejoin="round",
-            **attributes,
-        )
+        super().__init__(**attributes_with_defaults)
 
         self.children = [Path(d="M18 8L22 12L18 16"), Path(d="M2 12H22")]
 
 
-class ChevronDownIcon(Svg):
-    def __init__(self, **attributes: Dict[str, Any]):
-        class_attribute = attributes.pop("_class", "")
-        width = attributes.pop("width", "16")
-        height = attributes.pop("height", "16")
-        stroke_width = attributes.pop("stroke_width", "1.5")
+class ChevronDownIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
-        super().__init__(
-            _class=class_attribute,
-            width=width,
-            height=height,
-            viewBox="0 0 24 24",
-            fill="none",
-            stroke="currentColor",
-            stroke_width=stroke_width,
-            stroke_linecap="round",
-            stroke_linejoin="round",
-            **attributes,
-        )
+        super().__init__(**attributes_with_defaults)
 
         self.children = [Path(d="m6 9 6 6 6-6")]
 
 
-class ChevronLeftIcon(Svg):
-    def __init__(self, **attributes: Dict[str, Any]):
-        class_attribute = attributes.pop("_class", "")
-        width = attributes.pop("width", "16")
-        height = attributes.pop("height", "16")
-        stroke_width = attributes.pop("stroke_width", "1.5")
+class ChevronLeftIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
-        super().__init__(
-            _class=class_attribute,
-            width=width,
-            height=height,
-            viewBox="0 0 24 24",
-            fill="none",
-            stroke="currentColor",
-            stroke_width=stroke_width,
-            stroke_linecap="round",
-            stroke_linejoin="round",
-            **attributes,
-        )
+        super().__init__(**attributes_with_defaults)
 
         self.children = [Path(d="m15 18-6-6 6-6")]
 
 
-class ChevronRightIcon(Svg):
-    def __init__(self, **attributes: Dict[str, Any]):
-        class_attribute = attributes.pop("_class", "")
-        width = attributes.pop("width", "16")
-        height = attributes.pop("height", "16")
-        stroke_width = attributes.pop("stroke_width", "1.5")
+class ChevronRightIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
-        super().__init__(
-            _class=class_attribute,
-            width=width,
-            height=height,
-            viewBox="0 0 24 24",
-            fill="none",
-            stroke="currentColor",
-            stroke_width=stroke_width,
-            stroke_linecap="round",
-            stroke_linejoin="round",
-            **attributes,
-        )
+        super().__init__(**attributes_with_defaults)
 
         self.children = [Path(d="m9 18 6-6-6-6")]
 
 
-class ChevronUpIcon(Svg):
-    def __init__(self, **attributes: Dict[str, Any]):
-        class_attribute = attributes.pop("_class", "")
-        width = attributes.pop("width", "16")
-        height = attributes.pop("height", "16")
-        stroke_width = attributes.pop("stroke_width", "1.5")
+class ChevronUpIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
-        super().__init__(
-            _class=class_attribute,
-            width=width,
-            height=height,
-            viewBox="0 0 24 24",
-            fill="none",
-            stroke="currentColor",
-            stroke_width=stroke_width,
-            stroke_linecap="round",
-            stroke_linejoin="round",
-            **attributes,
-        )
+        super().__init__(**attributes_with_defaults)
 
         self.children = [Path(d="m18 15-6-6-6 6")]

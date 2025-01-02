@@ -1,50 +1,27 @@
-from typing import Any, Dict
+from pytempl.tags.svg import Circle, Line, Path
 
-from pytempl.tags import Circle, Line, Path, Svg
+from ._base import BaseSVGIconElement, SVGIconAttributes
+
+try:
+    from typing import Unpack
+except ImportError:
+    from typing_extensions import Unpack
 
 
-class CheckIcon(Svg):
-    def __init__(self, **attributes: Dict[str, Any]):
-        class_attribute = attributes.pop("_class", "")
-        width = attributes.pop("width", "16")
-        height = attributes.pop("height", "16")
-        stroke_width = attributes.pop("stroke_width", "1.5")
+class CheckIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
-        super().__init__(
-            _class=class_attribute,
-            width=width,
-            height=height,
-            viewBox="0 0 24 24",
-            fill="none",
-            stroke="currentColor",
-            stroke_width=stroke_width,
-            stroke_linecap="round",
-            stroke_linejoin="round",
-            **attributes,
-        )
+        super().__init__(**attributes_with_defaults)
 
         self.children = [Path(d="M20 6 9 17l-5-5")]
 
 
-class CheckCircleBigIcon(Svg):
-    def __init__(self, **attributes: Dict[str, Any]):
-        class_attribute = attributes.pop("_class", "")
-        width = attributes.pop("width", "16")
-        height = attributes.pop("height", "16")
-        stroke_width = attributes.pop("stroke_width", "1.5")
+class CheckCircleBigIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
-        super().__init__(
-            _class=class_attribute,
-            width=width,
-            height=height,
-            viewBox="0 0 24 24",
-            fill="none",
-            stroke="currentColor",
-            stroke_width=stroke_width,
-            stroke_linecap="round",
-            stroke_linejoin="round",
-            **attributes,
-        )
+        super().__init__(**attributes_with_defaults)
 
         self.children = [
             Path(d="M21.801 10A10 10 0 1 1 17 3.335"),
@@ -52,71 +29,29 @@ class CheckCircleBigIcon(Svg):
         ]
 
 
-class CrossIcon(Svg):
-    def __init__(self, **attributes: Dict[str, Any]):
-        class_attribute = attributes.pop("_class", "")
-        width = attributes.pop("width", "16")
-        height = attributes.pop("height", "16")
-        stroke_width = attributes.pop("stroke_width", "1.5")
+class CrossIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
-        super().__init__(
-            _class=class_attribute,
-            width=width,
-            height=height,
-            viewBox="0 0 24 24",
-            fill="none",
-            stroke="currentColor",
-            stroke_width=stroke_width,
-            stroke_linecap="round",
-            stroke_linejoin="round",
-            **attributes,
-        )
+        super().__init__(**attributes_with_defaults)
 
         self.children = [Path(d="M18 6 6 18"), Path(d="m6 6 12 12")]
 
 
-class DotFilledIcon(Svg):
-    def __init__(self, **attributes: Dict[str, Any]):
-        class_attribute = attributes.pop("_class", "")
-        width = attributes.pop("width", "16")
-        height = attributes.pop("height", "16")
-        stroke_width = attributes.pop("stroke_width", "1.5")
+class DotFilledIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
-        super().__init__(
-            _class=class_attribute,
-            width=width,
-            height=height,
-            viewBox="0 0 24 24",
-            fill="none",
-            stroke="currentColor",
-            stroke_width=stroke_width,
-            stroke_linecap="round",
-            stroke_linejoin="round",
-            **attributes,
-        )
+        super().__init__(**attributes_with_defaults)
 
         self.children = [Circle(cx="12.1", cy="12.1", r="1")]
 
 
-class ExclamationTriangleIcon(Svg):
-    def __init__(self, **attributes: Dict[str, Any]):
-        class_attribute = attributes.pop("_class", "")
-        width = attributes.pop("width", "16")
-        height = attributes.pop("height", "16")
-        stroke_width = attributes.pop("stroke_width", "1.5")
+class ExclamationTriangleIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
-        super().__init__(
-            _class=class_attribute,
-            width=width,
-            height=height,
-            viewBox="0 0 24 24",
-            fill="none",
-            stroke="currentColor",
-            stroke_width=stroke_width,
-            stroke_linecap="round",
-            stroke_linejoin="round",
-            **attributes,
-        )
+        super().__init__(**attributes_with_defaults)
 
         self.children = [
             Path(
@@ -127,48 +62,20 @@ class ExclamationTriangleIcon(Svg):
         ]
 
 
-class PlusIcon(Svg):
-    def __init__(self, **attributes: Dict[str, Any]):
-        class_attribute = attributes.pop("_class", "")
-        width = attributes.pop("width", "16")
-        height = attributes.pop("height", "16")
-        stroke_width = attributes.pop("stroke_width", "1.5")
+class PlusIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
-        super().__init__(
-            _class=class_attribute,
-            width=width,
-            height=height,
-            viewBox="0 0 24 24",
-            fill="none",
-            stroke="currentColor",
-            stroke_width=stroke_width,
-            stroke_linecap="round",
-            stroke_linejoin="round",
-            **attributes,
-        )
+        super().__init__(**attributes_with_defaults)
 
         self.children = [Path(d="M5 12h14"), Path(d="M12 5v14")]
 
 
-class CirclePlusIcon(Svg):
-    def __init__(self, **attributes: Dict[str, Any]):
-        class_attribute = attributes.pop("_class", "")
-        width = attributes.pop("width", "16")
-        height = attributes.pop("height", "16")
-        stroke_width = attributes.pop("stroke_width", "1.5")
+class CirclePlusIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
-        super().__init__(
-            _class=class_attribute,
-            width=width,
-            height=height,
-            viewBox="0 0 24 24",
-            fill="none",
-            stroke="currentColor",
-            stroke_width=stroke_width,
-            stroke_linecap="round",
-            stroke_linejoin="round",
-            **attributes,
-        )
+        super().__init__(**attributes_with_defaults)
 
         self.children = [
             Circle(cx="12", cy="12", r="10"),
@@ -177,25 +84,11 @@ class CirclePlusIcon(Svg):
         ]
 
 
-class RefreshCWIcon(Svg):
-    def __init__(self, **attributes: Dict[str, Any]):
-        class_attribute = attributes.pop("_class", "")
-        width = attributes.pop("width", "16")
-        height = attributes.pop("height", "16")
-        stroke_width = attributes.pop("stroke_width", "1.5")
+class RefreshCWIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
-        super().__init__(
-            _class=class_attribute,
-            width=width,
-            height=height,
-            viewBox="0 0 24 24",
-            fill="none",
-            stroke="currentColor",
-            stroke_width=stroke_width,
-            stroke_linecap="round",
-            stroke_linejoin="round",
-            **attributes,
-        )
+        super().__init__(**attributes_with_defaults)
 
         self.children = [
             Path(d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"),
@@ -205,25 +98,11 @@ class RefreshCWIcon(Svg):
         ]
 
 
-class HamburgerMenuIcon(Svg):
-    def __init__(self, **attributes: Dict[str, Any]):
-        class_attribute = attributes.pop("_class", "")
-        width = attributes.pop("width", "16")
-        height = attributes.pop("height", "16")
-        stroke_width = attributes.pop("stroke_width", "1.5")
+class HamburgerMenuIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
-        super().__init__(
-            _class=class_attribute,
-            width=width,
-            height=height,
-            viewBox="0 0 24 24",
-            fill="none",
-            stroke="currentColor",
-            stroke_width=stroke_width,
-            stroke_linecap="round",
-            stroke_linejoin="round",
-            **attributes,
-        )
+        super().__init__(**attributes_with_defaults)
 
         self.children = [
             Line(x1="4", x2="20", y1="12", y2="12"),
@@ -232,25 +111,11 @@ class HamburgerMenuIcon(Svg):
         ]
 
 
-class EllipsisIcon(Svg):
-    def __init__(self, **attributes: Dict[str, Any]):
-        class_attribute = attributes.pop("_class", "")
-        width = attributes.pop("width", "16")
-        height = attributes.pop("height", "16")
-        stroke_width = attributes.pop("stroke_width", "1.5")
+class EllipsisIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
-        super().__init__(
-            _class=class_attribute,
-            width=width,
-            height=height,
-            viewBox="0 0 24 24",
-            fill="none",
-            stroke="currentColor",
-            stroke_width=stroke_width,
-            stroke_linecap="round",
-            stroke_linejoin="round",
-            **attributes,
-        )
+        super().__init__(**attributes_with_defaults)
 
         self.children = [
             Circle(cx="12", cy="12", r="1"),
@@ -259,24 +124,10 @@ class EllipsisIcon(Svg):
         ]
 
 
-class LoaderCircleIcon(Svg):
-    def __init__(self, **attributes: Dict[str, Any]):
-        class_attribute = attributes.pop("_class", "")
-        width = attributes.pop("width", "16")
-        height = attributes.pop("height", "16")
-        stroke_width = attributes.pop("stroke_width", "1.5")
+class LoaderCircleIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
-        super().__init__(
-            _class=class_attribute,
-            width=width,
-            height=height,
-            viewBox="0 0 24 24",
-            fill="none",
-            stroke="currentColor",
-            stroke_width=stroke_width,
-            stroke_linecap="round",
-            stroke_linejoin="round",
-            **attributes,
-        )
+        super().__init__(**attributes_with_defaults)
 
         self.children = [Path(d="M21 12a9 9 0 1 1-6.219-8.56")]
