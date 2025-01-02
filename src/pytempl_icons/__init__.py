@@ -1,3 +1,4 @@
+from ._base import BaseSVGIconElement, SVGIconAttributes
 from .abstract import (
     CheckCircleBigIcon,
     CheckIcon,
@@ -21,11 +22,12 @@ from .arrows import (
 )
 from .objects import BanknoteIcon, EyeIcon, EyeOffIcon, PencilIcon, TrashIcon
 
-__version__ = "0.2.0a0"
+__version__ = "0.2.0a1"
 __all__ = [
     "ArrowRightIcon",
     "ArrowLeftIcon",
     "BanknoteIcon",
+    "BaseSVGIconElement",
     "CheckCircleBigIcon",
     "CheckIcon",
     "ChevronDownIcon",
@@ -44,5 +46,6 @@ __all__ = [
     "PencilIcon",
     "PlusIcon",
     "RefreshCWIcon",
+    "SVGIconAttributes",
     "TrashIcon",
 ]

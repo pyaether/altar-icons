@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pytempl-icons"
-version = "0.2.0a0"
+version = "0.2.0a1"
 description = "Beautiful & consistent icon toolkit made for PyTempl apps."
 authors = ["Saurabh Ghanekar <ghanekarsaurabh8@gmail.com>"]
 license = "BSD-2-Clause"
