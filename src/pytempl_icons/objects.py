@@ -1,27 +1,18 @@
-from typing import Any, Dict
+from pytempl.tags.svg import Circle, Path, Rect
 
-from pytempl.tags import Circle, Path, Rect, Svg
+from ._base import BaseSVGIconElement, SVGIconAttributes
+
+try:
+    from typing import Unpack
+except ImportError:
+    from typing_extensions import Unpack
 
 
-class EyeIcon(Svg):
-    def __init__(self, **attributes: Dict[str, Any]):
-        class_attribute = attributes.pop("_class", "")
-        width = attributes.pop("width", "16")
-        height = attributes.pop("height", "16")
-        stroke_width = attributes.pop("stroke_width", "1.5")
+class EyeIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
-        super().__init__(
-            _class=class_attribute,
-            width=width,
-            height=height,
-            viewBox="0 0 24 24",
-            fill="none",
-            stroke="currentColor",
-            stroke_width=stroke_width,
-            stroke_linecap="round",
-            stroke_linejoin="round",
-            **attributes,
-        )
+        super().__init__(**attributes_with_defaults)
 
         self.children = [
             Path(
@@ -31,25 +22,11 @@ class EyeIcon(Svg):
         ]
 
 
-class EyeOffIcon(Svg):
-    def __init__(self, **attributes: Dict[str, Any]):
-        class_attribute = attributes.pop("_class", "")
-        width = attributes.pop("width", "16")
-        height = attributes.pop("height", "16")
-        stroke_width = attributes.pop("stroke_width", "1.5")
+class EyeOffIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
-        super().__init__(
-            _class=class_attribute,
-            width=width,
-            height=height,
-            viewBox="0 0 24 24",
-            fill="none",
-            stroke="currentColor",
-            stroke_width=stroke_width,
-            stroke_linecap="round",
-            stroke_linejoin="round",
-            **attributes,
-        )
+        super().__init__(**attributes_with_defaults)
 
         self.children = [
             Path(
@@ -63,25 +40,11 @@ class EyeOffIcon(Svg):
         ]
 
 
-class BanknoteIcon(Svg):
-    def __init__(self, **attributes: Dict[str, Any]):
-        class_attribute = attributes.pop("_class", "")
-        width = attributes.pop("width", "16")
-        height = attributes.pop("height", "16")
-        stroke_width = attributes.pop("stroke_width", "1.5")
+class BanknoteIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
-        super().__init__(
-            _class=class_attribute,
-            width=width,
-            height=height,
-            viewBox="0 0 24 24",
-            fill="none",
-            stroke="currentColor",
-            stroke_width=stroke_width,
-            stroke_linecap="round",
-            stroke_linejoin="round",
-            **attributes,
-        )
+        super().__init__(**attributes_with_defaults)
 
         self.children = [
             Rect(width="20", height="12", x="2", y="6", rx="2"),
@@ -90,25 +53,11 @@ class BanknoteIcon(Svg):
         ]
 
 
-class PencilIcon(Svg):
-    def __init__(self, **attributes: Dict[str, Any]):
-        class_attribute = attributes.pop("_class", "")
-        width = attributes.pop("width", "16")
-        height = attributes.pop("height", "16")
-        stroke_width = attributes.pop("stroke_width", "1.5")
+class PencilIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
-        super().__init__(
-            _class=class_attribute,
-            width=width,
-            height=height,
-            viewBox="0 0 24 24",
-            fill="none",
-            stroke="currentColor",
-            stroke_width=stroke_width,
-            stroke_linecap="round",
-            stroke_linejoin="round",
-            **attributes,
-        )
+        super().__init__(**attributes_with_defaults)
 
         self.children = [
             Path(
@@ -118,25 +67,11 @@ class PencilIcon(Svg):
         ]
 
 
-class TrashIcon(Svg):
-    def __init__(self, **attributes: Dict[str, Any]):
-        class_attribute = attributes.pop("_class", "")
-        width = attributes.pop("width", "16")
-        height = attributes.pop("height", "16")
-        stroke_width = attributes.pop("stroke_width", "1.5")
+class TrashIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
-        super().__init__(
-            _class=class_attribute,
-            width=width,
-            height=height,
-            viewBox="0 0 24 24",
-            fill="none",
-            stroke="currentColor",
-            stroke_width=stroke_width,
-            stroke_linecap="round",
-            stroke_linejoin="round",
-            **attributes,
-        )
+        super().__init__(**attributes_with_defaults)
 
         self.children = [
             Path(d="M3 6h18"),
