@@ -1,6 +1,6 @@
 [project]
 name = "pytempl-icons"
-version = "0.2.0"
+version = "0.2.1"
 description = "Beautiful & consistent icon toolkit made for Aether apps."
 authors = [{ name = "Saurabh Ghanekar", email = "ghanekarsaurabh8@gmail.com" }]
 license = "BSD-2-Clause"
