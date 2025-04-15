@@ -1,4 +1,4 @@
-from typing import Dict, Literal, NotRequired
+from typing import Literal, NotRequired
 
 from pytempl.tags.svg import Svg, SvgAttributes
 
@@ -19,7 +19,7 @@ class SVGIconAttributes(SvgAttributes):
     width: str
 
     @classmethod
-    def set_defaults(cls) -> Dict:
+    def set_defaults(cls) -> dict:
         return {
             "height": "16",
             "fill": "none",
