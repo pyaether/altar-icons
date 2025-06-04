@@ -1,3 +1,3 @@
-# PyTempl Icons
+# Altar Icons
 
-Beautiful & consistent icon toolkit made for PyTempl apps.
+Beautiful & consistent icon toolkit made for Aether apps.
