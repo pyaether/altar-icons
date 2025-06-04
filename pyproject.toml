@@ -1,18 +1,18 @@
 [project]
-name = "pytempl-icons"
-version = "0.2.2"
+name = "pyaltar-icons"
+version = "0.3.0"
 description = "Beautiful & consistent icon toolkit made for Aether apps."
 authors = [{ name = "Saurabh Ghanekar", email = "ghanekarsaurabh8@gmail.com" }]
 license = "BSD-2-Clause"
 license-files = ["LICENSE"]
 readme = "README.md"
-urls = { homepage = "https://github.com/aether-py/pytempl-icons", repository = "https://github.com/aether-py/pytempl-icons", documentation = "https://github.com/aether-py/pytempl-icons" }
+urls = { homepage = "https://github.com/pyaether/altar-icons", repository = "https://github.com/pyaether/altar-icons", documentation = "https://github.com/pyaether/altar-icons" }
 requires-python = ">=3.10"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
 ]
-dependencies = ["pytempl>=0.2"]
+dependencies = ["pyaether>=0.3"]
 
 
 [dependency-groups]
@@ -70,8 +70,10 @@ convention = "google"
 backend = "uv"
 
 [tool.versioning.files]
-version_variable = ["src/pytempl_icons/__init__.py:__version__"]
+version_variable = ["src/altar_icons/__init__.py:__version__"]
 
+[tool.hatch.build.targets.wheel]
+packages = ["src/altar_icons"]
 
 [build-system]
 requires = ["hatchling"]
