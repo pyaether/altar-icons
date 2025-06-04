@@ -234,29 +234,14 @@ wheels = [
 [[package]]
 name = "pyaether"
 version = "0.3.0"
-source = { directory = "../aether" }
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "pydantic" },
     { name = "typing-extensions" },
 ]
-
-[package.metadata]
-requires-dist = [
-    { name = "pydantic", specifier = ">=2.10" },
-    { name = "typing-extensions", specifier = ">=4" },
-]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "click", specifier = ">=8.1" },
-    { name = "pre-commit", specifier = ">=4.0" },
-    { name = "rich", specifier = ">=13.9" },
-    { name = "ruff", specifier = ">=0.9" },
-    { name = "tomli", marker = "python_full_version < '3.11'", specifier = ">=2.2" },
-]
-test = [
-    { name = "pytest", specifier = ">=8.3" },
-    { name = "pytest-cov", specifier = ">=6.0" },
+sdist = { url = "https://files.pythonhosted.org/packages/e1/38/9ac741009be5701138d239245c1e62404c94468969277aa0446099568573/pyaether-0.3.0.tar.gz", hash = "sha256:a981ee4d1025f4843e084d58c7267bdea9502eef7bfdc8cc8419333c84b4c897", size = 61921 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/4d/81/42f4cde9bc08a64505aaea649c1ed1432a5039daa4443a97f21423db1702/pyaether-0.3.0-py3-none-any.whl", hash = "sha256:feca0169c493a76978f6cd93f3b3d07b94aca2903f6935b5fb9beff49f65380c", size = 107435 },
 ]
 
 [[package]]
@@ -281,7 +266,7 @@ test = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "pyaether", directory = "../aether" }]
+requires-dist = [{ name = "pyaether", specifier = ">=0.3" }]
 
 [package.metadata.requires-dev]
 dev = [
