@@ -1,4 +1,4 @@
-from pytempl.tags.svg import Path
+from aether.tags.svg import Path
 
 from ._base import BaseSVGIconElement, SVGIconAttributes
 

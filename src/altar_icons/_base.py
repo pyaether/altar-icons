@@ -1,6 +1,6 @@
 from typing import Literal, NotRequired
 
-from pytempl.tags.svg import Svg, SvgAttributes
+from aether.tags.svg import Svg, SvgAttributes
 
 
 class BaseSVGIconElement(Svg):
