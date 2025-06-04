@@ -337,7 +337,7 @@ wheels = [
 
 [[package]]
 name = "pytempl"
-version = "0.2.4"
+version = "0.2.6"
 source = { directory = "../pytempl" }
 dependencies = [
     { name = "pydantic" },
@@ -365,7 +365,7 @@ test = [
 
 [[package]]
 name = "pytempl-icons"
-version = "0.2.0"
+version = "0.2.1"
 source = { editable = "." }
 dependencies = [
     { name = "pytempl" },

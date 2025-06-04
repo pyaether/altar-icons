@@ -1,6 +1,6 @@
 [project]
 name = "pytempl-icons"
-version = "0.2.1"
+version = "0.2.2"
 description = "Beautiful & consistent icon toolkit made for Aether apps."
 authors = [{ name = "Saurabh Ghanekar", email = "ghanekarsaurabh8@gmail.com" }]
 license = "BSD-2-Clause"
@@ -48,6 +48,7 @@ select = [
     "W",      # pycodestyle warnings
     "F",      # pyflakes
     "I",      # isort
+    "S",      # flake8-bandit
     "B",      # flake8-bugbear
     "C4",     # flake8-comprehensions
     "UP",     # pyupgrade
