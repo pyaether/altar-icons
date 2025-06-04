@@ -84,6 +84,15 @@ class CirclePlusIcon(BaseSVGIconElement):
         ]
 
 
+class CircleIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [Circle(cx="12", cy="12", r="10")]
+
+
 class RefreshCWIcon(BaseSVGIconElement):
     def __init__(self, **attributes: Unpack[SVGIconAttributes]):
         attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}

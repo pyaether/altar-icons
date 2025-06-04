@@ -2,6 +2,7 @@ from ._base import BaseSVGIconElement, SVGIconAttributes
 from .abstract import (
     CheckCircleBigIcon,
     CheckIcon,
+    CircleIcon,
     CirclePlusIcon,
     CrossIcon,
     DotFilledIcon,
@@ -34,6 +35,7 @@ __all__ = [
     "ChevronLeftIcon",
     "ChevronRightIcon",
     "ChevronUpIcon",
+    "CircleIcon",
     "CirclePlusIcon",
     "CrossIcon",
     "DotFilledIcon",
