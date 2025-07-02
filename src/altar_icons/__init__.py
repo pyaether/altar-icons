@@ -36,7 +36,7 @@ from .objects import (
     UserPlusIcon,
 )
 
-__version__ = "0.3.0"
+__version__ = "0.3.1"
 __all__ = [
     "ArrowRightIcon",
     "ArrowLeftIcon",
