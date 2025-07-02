@@ -21,7 +21,20 @@ from .arrows import (
     ChevronRightIcon,
     ChevronUpIcon,
 )
-from .objects import BanknoteIcon, EyeIcon, EyeOffIcon, PencilIcon, TrashIcon
+from .objects import (
+    BanknoteIcon,
+    EyeIcon,
+    EyeOffIcon,
+    KeyRoundIcon,
+    LockIcon,
+    LogInIcon,
+    LogOutIcon,
+    MailIcon,
+    PencilIcon,
+    TrashIcon,
+    UserIcon,
+    UserPlusIcon,
+)
 
 __version__ = "0.3.0"
 __all__ = [
@@ -44,10 +57,17 @@ __all__ = [
     "EyeIcon",
     "EyeOffIcon",
     "HamburgerMenuIcon",
+    "KeyRoundIcon",
     "LoaderCircleIcon",
+    "LockIcon",
+    "LogInIcon",
+    "LogOutIcon",
+    "MailIcon",
     "PencilIcon",
     "PlusIcon",
     "RefreshCWIcon",
     "SVGIconAttributes",
     "TrashIcon",
+    "UserIcon",
+    "UserPlusIcon",
 ]

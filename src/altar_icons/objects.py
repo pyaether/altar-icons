@@ -1,4 +1,4 @@
-from aether.tags.svg import Circle, Path, Rect
+from aether.tags.svg import Circle, Line, Path, Rect
 
 from ._base import BaseSVGIconElement, SVGIconAttributes
 
@@ -77,4 +77,94 @@ class TrashIcon(BaseSVGIconElement):
             Path(d="M3 6h18"),
             Path(d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"),
             Path(d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"),
+        ]
+
+
+class LogInIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Path(d="m10 17 5-5-5-5"),
+            Path(d="M15 12H3"),
+            Path(d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"),
+        ]
+
+
+class LogOutIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Path(d="m16 17 5-5-5-5"),
+            Path(d="M21 12H9"),
+            Path(d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"),
+        ]
+
+
+class UserIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Path(d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"),
+            Circle(cx="12", cy="7", r="4"),
+        ]
+
+
+class UserPlusIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Path(d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"),
+            Circle(cx="9", cy="7", r="4"),
+            Line(x1="19", x2="19", y1="8", y2="14"),
+            Line(x1="22", x2="16", y1="11", y2="11"),
+        ]
+
+
+class MailIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Path(d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"),
+            Rect(width="20", height="16", x="2", y="4", rx="2"),
+        ]
+
+
+class LockIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Rect(width="18", height="11", x="3", y="11", rx="2", ry="2"),
+            Path(d="M7 11V7a5 5 0 0 1 10 0v4"),
+        ]
+
+
+class KeyRoundIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Path(
+                d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"
+            ),
+            Circle(fill="currentColor", cx="16.5", cy="7.5", r=".5"),
         ]
