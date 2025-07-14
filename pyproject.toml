@@ -1,6 +1,6 @@
 [project]
 name = "pyaltar-icons"
-version = "0.3.1"
+version = "0.3.2"
 description = "Beautiful & consistent icon toolkit made for Aether apps."
 authors = [{ name = "Saurabh Ghanekar", email = "ghanekarsaurabh8@gmail.com" }]
 license = "BSD-2-Clause"
@@ -12,7 +12,7 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
 ]
-dependencies = ["pyaether>=0.3"]
+dependencies = ["pyaether>=0.4"]
 
 
 [dependency-groups]
