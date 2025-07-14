@@ -140,7 +140,22 @@ class MailIcon(BaseSVGIconElement):
 
         self.children = [
             Path(d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"),
-            Rect(width="20", height="16", x="2", y="4", rx="2"),
+            Rect(width="20", height="16", x="2", y="4", rx="2", ry="2"),
+        ]
+
+
+class IdCardIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Path(d="M16 10h2"),
+            Path(d="M16 14h2"),
+            Path(d="M6.17 15a3 3 0 0 1 5.66 0"),
+            Circle(cx="9", cy="11", r="2"),
+            Rect(width="20", height="14", x="2", y="5", rx="2", ry="2"),
         ]
 
 
@@ -152,6 +167,22 @@ class LockIcon(BaseSVGIconElement):
 
         self.children = [
             Rect(width="18", height="11", x="3", y="11", rx="2", ry="2"),
+            Path(d="M7 11V7a5 5 0 0 1 10 0v4"),
+        ]
+
+
+class LockQuestionMarkIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Path(d="M20 11.8V12a2 2 0 0 0-2-1H5a2 2 0 0 0-2 2v7c0 1.1.9 2 2 2h11.5"),
+            Path(
+                d="M18 16c.2-.4.5-.8.9-1a2.1 2.1 0 0 1 2.6.4c.3.4.5.8.5 1.3 0 1.3-2 2-2 2"
+            ),
+            Path(d="M20 22v.01"),
             Path(d="M7 11V7a5 5 0 0 1 10 0v4"),
         ]
 
