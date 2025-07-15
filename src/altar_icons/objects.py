@@ -171,6 +171,20 @@ class LockIcon(BaseSVGIconElement):
         ]
 
 
+class LockRotateIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Rect(width="8", height="6", x="8", y="10.75", rx="1", ry="1"),
+            Path(d="M10 10.25v-2a2 2 0 1 1 4 0v2"),
+            Path(d="M3 12a9 9 0 1 0 9-9 9.74 9.74 0 0 0-6.74 2.74L3 8"),
+            Path(d="M3 4v4h4"),
+        ]
+
+
 class LockQuestionMarkIcon(BaseSVGIconElement):
     def __init__(self, **attributes: Unpack[SVGIconAttributes]):
         attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
@@ -198,4 +212,19 @@ class KeyRoundIcon(BaseSVGIconElement):
                 d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"
             ),
             Circle(fill="currentColor", cx="16.5", cy="7.5", r=".5"),
+        ]
+
+
+class KeyRotateIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Path(d="m14.5 9.5 1 1"),
+            Path(d="m15.5 8.5-4 4"),
+            Path(d="M3 12a9 9 0 1 0 9-9 9.74 9.74 0 0 0-6.74 2.74L3 8"),
+            Path(d="M3 3v5h5"),
+            Circle(cx="10", cy="14", r="2"),
         ]

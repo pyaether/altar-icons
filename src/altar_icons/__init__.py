@@ -26,9 +26,11 @@ from .objects import (
     EyeIcon,
     EyeOffIcon,
     IdCardIcon,
+    KeyRotateIcon,
     KeyRoundIcon,
     LockIcon,
     LockQuestionMarkIcon,
+    LockRotateIcon,
     LogInIcon,
     LogOutIcon,
     MailIcon,
@@ -38,7 +40,7 @@ from .objects import (
     UserPlusIcon,
 )
 
-__version__ = "0.3.2"
+__version__ = "0.3.3"
 __all__ = [
     "ArrowRightIcon",
     "ArrowLeftIcon",
@@ -60,10 +62,12 @@ __all__ = [
     "EyeOffIcon",
     "HamburgerMenuIcon",
     "IdCardIcon",
+    "KeyRotateIcon",
     "KeyRoundIcon",
     "LoaderCircleIcon",
     "LockIcon",
     "LockQuestionMarkIcon",
+    "LockRotateIcon",
     "LogInIcon",
     "LogOutIcon",
     "MailIcon",
