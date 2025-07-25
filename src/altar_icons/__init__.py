@@ -34,13 +34,15 @@ from .objects import (
     LogInIcon,
     LogOutIcon,
     MailIcon,
+    PanelLeftIcon,
+    PanelRightIcon,
     PencilIcon,
     TrashIcon,
     UserIcon,
     UserPlusIcon,
 )
 
-__version__ = "0.3.3"
+__version__ = "0.3.4"
 __all__ = [
     "ArrowRightIcon",
     "ArrowLeftIcon",
@@ -71,6 +73,8 @@ __all__ = [
     "LogInIcon",
     "LogOutIcon",
     "MailIcon",
+    "PanelLeftIcon",
+    "PanelRightIcon",
     "PencilIcon",
     "PlusIcon",
     "RefreshCWIcon",

@@ -228,3 +228,27 @@ class KeyRotateIcon(BaseSVGIconElement):
             Path(d="M3 3v5h5"),
             Circle(cx="10", cy="14", r="2"),
         ]
+
+
+class PanelLeftIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Rect(width="18", height="18", x="3", y="3", rx="2", ry="2"),
+            Path(d="M9 3v18"),
+        ]
+
+
+class PanelRightIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Rect(width="18", height="18", x="3", y="3", rx="2", ry="2"),
+            Path(d="M15 3v18"),
+        ]
