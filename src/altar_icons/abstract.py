@@ -1,4 +1,4 @@
-from aether.tags.svg import Circle, Line, Path
+from aether.tags.svg import Circle, Line, Path, Rect
 
 from ._base import BaseSVGIconElement, SVGIconAttributes
 
@@ -140,3 +140,17 @@ class LoaderCircleIcon(BaseSVGIconElement):
         super().__init__(**attributes_with_defaults)
 
         self.children = [Path(d="M21 12a9 9 0 1 1-6.219-8.56")]
+
+
+class LayoutDashboardIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Rect(width="7", height="9", x="3", y="3", rx="1", ry="1"),
+            Rect(width="7", height="5", x="14", y="3", rx="1", ry="1"),
+            Rect(width="7", height="9", x="14", y="12", rx="1", ry="1"),
+            Rect(width="7", height="5", x="3", y="16", rx="1", ry="1"),
+        ]

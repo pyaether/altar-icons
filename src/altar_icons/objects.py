@@ -252,3 +252,66 @@ class PanelRightIcon(BaseSVGIconElement):
             Rect(width="18", height="18", x="3", y="3", rx="2", ry="2"),
             Path(d="M15 3v18"),
         ]
+
+
+class WebsiteIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Rect(width="20", height="16", x="2", y="4", rx="2", ry="2"),
+            Circle(cx="5", cy="6.5", r="0.05"),
+            Circle(cx="8", cy="6.5", r="0.05"),
+            Circle(cx="11", cy="6.5", r="0.05"),
+            Circle(cx="12", cy="13.5", r="4.75"),
+            Path(d="M12 9.5a5 5 0 0 0 0 8 5 5 0 0 0 0-8"),
+            Path(d="M8 13.5h8"),
+        ]
+
+
+class WebsitesIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Rect(width="17", height="15", x="5", y="3", rx="2", ry="2"),
+            Circle(cx="8", cy="5.5", r="0.05"),
+            Circle(cx="11", cy="5.5", r="0.05"),
+            Circle(cx="14", cy="5.5", r="0.05"),
+            Circle(cx="13.5", cy="12", r="4"),
+            Path(d="M13.5 8.5a6 5 0 0 0 0 7 6 5 0 0 0 0-7"),
+            Path(d="M9.5 12h8"),
+            Path(d="M2.5 8v11.5a2 2 0 0 0 2 1h14"),
+        ]
+
+
+class SettingsIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Path(
+                d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
+            ),
+            Circle(cx="12", cy="12", r="3"),
+        ]
+
+
+class BookOpenIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Path(d="M12 7v14"),
+            Path(
+                d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"
+            ),
+        ]

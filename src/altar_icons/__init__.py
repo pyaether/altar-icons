@@ -9,6 +9,7 @@ from .abstract import (
     EllipsisIcon,
     ExclamationTriangleIcon,
     HamburgerMenuIcon,
+    LayoutDashboardIcon,
     LoaderCircleIcon,
     PlusIcon,
     RefreshCWIcon,
@@ -23,6 +24,7 @@ from .arrows import (
 )
 from .objects import (
     BanknoteIcon,
+    BookOpenIcon,
     EyeIcon,
     EyeOffIcon,
     IdCardIcon,
@@ -37,17 +39,21 @@ from .objects import (
     PanelLeftIcon,
     PanelRightIcon,
     PencilIcon,
+    SettingsIcon,
     TrashIcon,
     UserIcon,
     UserPlusIcon,
+    WebsiteIcon,
+    WebsitesIcon,
 )
 
-__version__ = "0.3.4"
+__version__ = "0.3.5"
 __all__ = [
     "ArrowRightIcon",
     "ArrowLeftIcon",
     "BanknoteIcon",
     "BaseSVGIconElement",
+    "BookOpenIcon",
     "CheckCircleBigIcon",
     "CheckIcon",
     "ChevronDownIcon",
@@ -66,6 +72,7 @@ __all__ = [
     "IdCardIcon",
     "KeyRotateIcon",
     "KeyRoundIcon",
+    "LayoutDashboardIcon",
     "LoaderCircleIcon",
     "LockIcon",
     "LockQuestionMarkIcon",
@@ -78,8 +85,11 @@ __all__ = [
     "PencilIcon",
     "PlusIcon",
     "RefreshCWIcon",
+    "SettingsIcon",
     "SVGIconAttributes",
     "TrashIcon",
     "UserIcon",
     "UserPlusIcon",
+    "WebsiteIcon",
+    "WebsitesIcon",
 ]
