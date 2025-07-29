@@ -27,6 +27,8 @@ from .objects import (
     BookOpenIcon,
     EyeIcon,
     EyeOffIcon,
+    FileIcon,
+    FolderIcon,
     IdCardIcon,
     KeyRotateIcon,
     KeyRoundIcon,
@@ -47,7 +49,7 @@ from .objects import (
     WebsitesIcon,
 )
 
-__version__ = "0.3.5"
+__version__ = "0.3.6"
 __all__ = [
     "ArrowRightIcon",
     "ArrowLeftIcon",
@@ -68,6 +70,8 @@ __all__ = [
     "ExclamationTriangleIcon",
     "EyeIcon",
     "EyeOffIcon",
+    "FileIcon",
+    "FolderIcon",
     "HamburgerMenuIcon",
     "IdCardIcon",
     "KeyRotateIcon",
