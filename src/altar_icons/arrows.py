@@ -60,3 +60,15 @@ class ChevronUpIcon(BaseSVGIconElement):
         super().__init__(**attributes_with_defaults)
 
         self.children = [Path(d="m18 15-6-6-6 6")]
+
+
+class ExternalLinkIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Path(d="M15 3h6v6"),
+            Path(d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"),
+        ]
