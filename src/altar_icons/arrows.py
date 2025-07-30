@@ -72,3 +72,16 @@ class ExternalLinkIcon(BaseSVGIconElement):
             Path(d="M15 3h6v6"),
             Path(d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"),
         ]
+
+
+class MoveHorizontalIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Path(d="m18 8 4 4-4 4"),
+            Path(d="M2 12h20"),
+            Path(d="m6 8-4 4 4 4"),
+        ]

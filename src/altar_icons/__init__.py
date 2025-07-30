@@ -22,6 +22,7 @@ from .arrows import (
     ChevronRightIcon,
     ChevronUpIcon,
     ExternalLinkIcon,
+    MoveHorizontalIcon,
 )
 from .objects import (
     BanknoteIcon,
@@ -29,6 +30,7 @@ from .objects import (
     EyeIcon,
     EyeOffIcon,
     FileIcon,
+    FileTextIcon,
     FolderIcon,
     IdCardIcon,
     KeyRotateIcon,
@@ -43,6 +45,7 @@ from .objects import (
     PanelRightIcon,
     PencilIcon,
     SettingsIcon,
+    Share2Icon,
     TrashIcon,
     UserIcon,
     UserPlusIcon,
@@ -50,7 +53,7 @@ from .objects import (
     WebsitesIcon,
 )
 
-__version__ = "0.3.7"
+__version__ = "0.3.8"
 __all__ = [
     "ArrowRightIcon",
     "ArrowLeftIcon",
@@ -73,6 +76,7 @@ __all__ = [
     "EyeIcon",
     "EyeOffIcon",
     "FileIcon",
+    "FileTextIcon",
     "FolderIcon",
     "HamburgerMenuIcon",
     "IdCardIcon",
@@ -86,12 +90,14 @@ __all__ = [
     "LogInIcon",
     "LogOutIcon",
     "MailIcon",
+    "MoveHorizontalIcon",
     "PanelLeftIcon",
     "PanelRightIcon",
     "PencilIcon",
     "PlusIcon",
     "RefreshCWIcon",
     "SettingsIcon",
+    "Share2Icon",
     "SVGIconAttributes",
     "TrashIcon",
     "UserIcon",

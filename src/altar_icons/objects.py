@@ -329,6 +329,21 @@ class FileIcon(BaseSVGIconElement):
         ]
 
 
+class FileTextIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Path(d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"),
+            Path(d="M14 2v4a2 2 0 0 0 2 2h4"),
+            Path(d="M10 9H8"),
+            Path(d="M16 13H8"),
+            Path(d="M16 17H8"),
+        ]
+
+
 class FolderIcon(BaseSVGIconElement):
     def __init__(self, **attributes: Unpack[SVGIconAttributes]):
         attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
@@ -339,4 +354,22 @@ class FolderIcon(BaseSVGIconElement):
             Path(
                 d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
             )
+        ]
+
+
+class Share2Icon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Circle(cx="18", cy="5", r="3"),
+            Circle(cx="6", cy="12", r="3"),
+            Circle(cx="18", cy="19", r="3"),
+            Line(x1="8.59", x2="15.42", y1="13.51", y2="17.49"),
+            Line(x1="15.41", x2="8.59", y1="6.51", y2="10.49"),
+            Path(
+                d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
+            ),
         ]
