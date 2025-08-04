@@ -1,6 +1,6 @@
 [project]
 name = "pyaltar-icons"
-version = "0.3.9"
+version = "0.3.10"
 description = "Beautiful & consistent icon toolkit made for Aether apps."
 authors = [{ name = "Saurabh Ghanekar", email = "ghanekarsaurabh8@gmail.com" }]
 license = "BSD-2-Clause"

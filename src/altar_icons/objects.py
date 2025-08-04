@@ -370,3 +370,15 @@ class Share2Icon(BaseSVGIconElement):
             Line(x1="8.59", x2="15.42", y1="13.51", y2="17.49"),
             Line(x1="15.41", x2="8.59", y1="6.51", y2="10.49"),
         ]
+
+
+class CopyIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Rect(width="14", height="14", x="8", y="8", rx="2", ry="2"),
+            Path(d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"),
+        ]

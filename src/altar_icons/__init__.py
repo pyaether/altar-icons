@@ -27,6 +27,7 @@ from .arrows import (
 from .objects import (
     BanknoteIcon,
     BookOpenIcon,
+    CopyIcon,
     EyeIcon,
     EyeOffIcon,
     FileIcon,
@@ -53,7 +54,7 @@ from .objects import (
     WebsitesIcon,
 )
 
-__version__ = "0.3.9"
+__version__ = "0.3.10"
 __all__ = [
     "ArrowRightIcon",
     "ArrowLeftIcon",
@@ -68,6 +69,7 @@ __all__ = [
     "ChevronUpIcon",
     "CircleIcon",
     "CirclePlusIcon",
+    "CopyIcon",
     "CrossIcon",
     "DotFilledIcon",
     "EllipsisIcon",
