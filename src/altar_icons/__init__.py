@@ -13,6 +13,7 @@ from .abstract import (
     LoaderCircleIcon,
     PlusIcon,
     RefreshCWIcon,
+    SearchIcon,
 )
 from .arrows import (
     ArrowLeftIcon,
@@ -54,7 +55,7 @@ from .objects import (
     WebsitesIcon,
 )
 
-__version__ = "0.3.10"
+__version__ = "0.3.11"
 __all__ = [
     "ArrowRightIcon",
     "ArrowLeftIcon",
@@ -98,6 +99,7 @@ __all__ = [
     "PencilIcon",
     "PlusIcon",
     "RefreshCWIcon",
+    "SearchIcon",
     "SettingsIcon",
     "Share2Icon",
     "SVGIconAttributes",

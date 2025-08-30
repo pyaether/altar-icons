@@ -154,3 +154,15 @@ class LayoutDashboardIcon(BaseSVGIconElement):
             Rect(width="7", height="9", x="14", y="12", rx="1", ry="1"),
             Rect(width="7", height="5", x="3", y="16", rx="1", ry="1"),
         ]
+
+
+class SearchIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Path(d="m21 21-4.34-4.34"),
+            Circle(cx="11", cy="11", r="8"),
+        ]
