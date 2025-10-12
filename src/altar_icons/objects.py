@@ -382,3 +382,30 @@ class CopyIcon(BaseSVGIconElement):
             Rect(width="14", height="14", x="8", y="8", rx="2", ry="2"),
             Path(d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"),
         ]
+
+
+class SendHorizontalIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Path(
+                d="M3.714 3.048a.498.498 0 0 0-.683.627l2.843 7.627a2 2 0 0 1 0 1.396l-2.842 7.627a.498.498 0 0 0 .682.627l18-8.5a.5.5 0 0 0 0-.904z"
+            ),
+            Path(d="M6 12h16"),
+        ]
+
+
+class MicIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Path(d="M12 19v3"),
+            Path(d="M19 10v2a7 7 0 0 1-14 0v-2"),
+            Rect(width="2", height="13", x="9", y="2", rx="3", ry="3"),
+        ]

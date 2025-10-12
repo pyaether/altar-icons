@@ -43,9 +43,11 @@ from .objects import (
     LogInIcon,
     LogOutIcon,
     MailIcon,
+    MicIcon,
     PanelLeftIcon,
     PanelRightIcon,
     PencilIcon,
+    SendHorizontalIcon,
     SettingsIcon,
     Share2Icon,
     TrashIcon,
@@ -55,7 +57,7 @@ from .objects import (
     WebsitesIcon,
 )
 
-__version__ = "0.3.11"
+__version__ = "0.3.12"
 __all__ = [
     "ArrowRightIcon",
     "ArrowLeftIcon",
@@ -93,6 +95,7 @@ __all__ = [
     "LogInIcon",
     "LogOutIcon",
     "MailIcon",
+    "MicIcon",
     "MoveHorizontalIcon",
     "PanelLeftIcon",
     "PanelRightIcon",
@@ -100,6 +103,7 @@ __all__ = [
     "PlusIcon",
     "RefreshCWIcon",
     "SearchIcon",
+    "SendHorizontalIcon",
     "SettingsIcon",
     "Share2Icon",
     "SVGIconAttributes",
