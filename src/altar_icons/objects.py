@@ -409,3 +409,17 @@ class MicIcon(BaseSVGIconElement):
             Path(d="M19 10v2a7 7 0 0 1-14 0v-2"),
             Rect(width="2", height="13", x="9", y="2", rx="3", ry="3"),
         ]
+
+
+class CalendarIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Path(d="M8 2v4"),
+            Path(d="M16 2v4"),
+            Rect(width="18", height="18", x="3", y="4", rx="2", ry="2"),
+            Path(d="M3 10h18"),
+        ]

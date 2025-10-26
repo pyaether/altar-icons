@@ -28,6 +28,7 @@ from .arrows import (
 from .objects import (
     BanknoteIcon,
     BookOpenIcon,
+    CalendarIcon,
     CopyIcon,
     EyeIcon,
     EyeOffIcon,
@@ -57,13 +58,14 @@ from .objects import (
     WebsitesIcon,
 )
 
-__version__ = "0.3.12"
+__version__ = "0.3.13"
 __all__ = [
     "ArrowRightIcon",
     "ArrowLeftIcon",
     "BanknoteIcon",
     "BaseSVGIconElement",
     "BookOpenIcon",
+    "CalendarIcon",
     "CheckCircleBigIcon",
     "CheckIcon",
     "ChevronDownIcon",
