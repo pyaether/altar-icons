@@ -97,9 +97,9 @@ class NetworkIcon(BaseSVGIconElement):
         super().__init__(**attributes_with_defaults)
 
         self.children = [
-            Rect(width="6", height="6", x="16", y="16", rx="1"),
-            Rect(width="6", height="6", x="2", y="16", rx="1"),
-            Rect(width="6", height="6", x="9", y="2", rx="1"),
+            Rect(width="6", height="6", x="16", y="16", rx="1", ry="1"),
+            Rect(width="6", height="6", x="2", y="16", rx="1", ry="1"),
+            Rect(width="6", height="6", x="9", y="2", rx="1", ry="1"),
             Path(d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"),
             Path(d="M12 12V8"),
         ]
@@ -484,7 +484,7 @@ class DatabaseIcon(BaseSVGIconElement):
         super().__init__(**attributes_with_defaults)
 
         self.children = [
-            Ellipse(cx="12", cy="12", rx="9", ry="3"),
+            Ellipse(cx="12", cy="5", rx="9", ry="3"),
             Path(d="M3 5V19A9 3 0 0 0 21 19V5"),
             Path(d="M3 12A9 3 0 0 0 21 12"),
         ]
