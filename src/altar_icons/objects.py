@@ -63,7 +63,7 @@ class BotIcon(BaseSVGIconElement):
 
         self.children = [
             Path(d="M12 8V4H8"),
-            Rect(width="16", height="12", x="4", y="8", rx="2"),
+            Rect(width="16", height="12", x="4", y="8", rx="2", ry="2"),
             Path(d="M2 14h2"),
             Path(d="M20 14h2"),
             Path(d="M15 13v2"),
@@ -112,7 +112,7 @@ class BanknoteIcon(BaseSVGIconElement):
         super().__init__(**attributes_with_defaults)
 
         self.children = [
-            Rect(width="20", height="12", x="2", y="6", rx="2"),
+            Rect(width="20", height="12", x="2", y="6", rx="2", ry="2"),
             Circle(cx="12", cy="12", r="2"),
             Path(d="M6 12h.01M18 12h.01"),
         ]
@@ -150,8 +150,8 @@ class CpuIcon(BaseSVGIconElement):
             Path(d="M20 7h2"),
             Path(d="M7 20v2"),
             Path(d="M7 2v2"),
-            Rect(width="16", height="16", x="4", y="4", rx="2"),
-            Rect(width="8", height="8", x="8", y="8", rx="1"),
+            Rect(width="16", height="16", x="4", y="4", rx="2", ry="2"),
+            Rect(width="8", height="8", x="8", y="8", rx="1", ry="2"),
         ]
 
 
