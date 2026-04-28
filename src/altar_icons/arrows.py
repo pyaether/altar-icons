@@ -143,6 +143,15 @@ class ChevronRightIcon(BaseSVGIconElement):
         self.children = [Path(d="m9 18 6-6-6-6")]
 
 
+class ChevronsLeftRightIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [Path(d="m9 7-5 5 5 5"), Path(d="m15 7 5 5-5 5")]
+
+
 class ChevronUpIcon(BaseSVGIconElement):
     def __init__(self, **attributes: Unpack[SVGIconAttributes]):
         attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
@@ -150,6 +159,15 @@ class ChevronUpIcon(BaseSVGIconElement):
         super().__init__(**attributes_with_defaults)
 
         self.children = [Path(d="m18 15-6-6-6 6")]
+
+
+class ChevronsUpDownIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [Path(d="m7 15 5 5 5-5"), Path(d="m7 9 5-5 5 5")]
 
 
 class MoveHorizontalIcon(BaseSVGIconElement):

@@ -38,6 +38,8 @@ from .arrows import (
     ChevronDownIcon,
     ChevronLeftIcon,
     ChevronRightIcon,
+    ChevronsLeftRightIcon,
+    ChevronsUpDownIcon,
     ChevronUpIcon,
     MoveDownIcon,
     MoveHorizontalIcon,
@@ -48,6 +50,9 @@ from .arrows import (
     TrendingUpIcon,
 )
 from .objects import (
+    BadgeCheckIcon,
+    BadgeInfoIcon,
+    BadgeXIcon,
     BanknoteIcon,
     BookOpenIcon,
     BotIcon,
@@ -94,7 +99,7 @@ from .objects import (
     WebsitesIcon,
 )
 
-__version__ = "0.4.2"
+__version__ = "0.4.3"
 __all__ = [
     "ActivityIcon",
     "ArrowDownIcon",
@@ -103,6 +108,9 @@ __all__ = [
     "ArrowLeftIcon",
     "ArrowUpIcon",
     "ArrowUpRightIcon",
+    "BadgeCheckIcon",
+    "BadgeInfoIcon",
+    "BadgeXIcon",
     "BanknoteIcon",
     "BaseSVGIconElement",
     "BookOpenIcon",
@@ -120,6 +128,8 @@ __all__ = [
     "ChevronDownIcon",
     "ChevronLeftIcon",
     "ChevronRightIcon",
+    "ChevronsLeftRightIcon",
+    "ChevronsUpDownIcon",
     "ChevronUpIcon",
     "CircleIcon",
     "CirclePlusIcon",

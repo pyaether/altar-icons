@@ -22,6 +22,50 @@ class EyeIcon(BaseSVGIconElement):
         ]
 
 
+class BadgeCheckIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Path(
+                d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"
+            ),
+            Path(d="m9 12 2 2 4-4"),
+        ]
+
+
+class BadgeXIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Path(
+                d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"
+            ),
+            Line(x1="15", x2="9", y1="9", y2="15"),
+            Line(x1="9", x2="15", y1="15", y2="9"),
+        ]
+
+
+class BadgeInfoIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Path(
+                d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"
+            ),
+            Line(x1="12", x2="12", y1="16", y2="12"),
+            Line(x1="12", x2="12.01", y1="8", y2="8"),
+        ]
+
+
 class EyeOffIcon(BaseSVGIconElement):
     def __init__(self, **attributes: Unpack[SVGIconAttributes]):
         attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
