@@ -17,7 +17,7 @@ class CheckIcon(BaseSVGIconElement):
         self.children = [Path(d="M20 6 9 17l-5-5")]
 
 
-class CheckCircleBigIcon(BaseSVGIconElement):
+class CircleCheckBigIcon(BaseSVGIconElement):
     def __init__(self, **attributes: Unpack[SVGIconAttributes]):
         attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
@@ -29,7 +29,7 @@ class CheckCircleBigIcon(BaseSVGIconElement):
         ]
 
 
-class CheckCircleIcon(BaseSVGIconElement):
+class CircleCheckIcon(BaseSVGIconElement):
     def __init__(self, **attributes: Unpack[SVGIconAttributes]):
         attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
@@ -167,11 +167,24 @@ class XIcon(BaseSVGIconElement):
 
 class DotFilledIcon(BaseSVGIconElement):
     def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {
+            **SVGIconAttributes.set_defaults(),
+            **{"fill": "currentColor"},
+            **attributes,
+        }
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [Circle(cx="12.1", cy="12.1", r="4")]
+
+
+class DotIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
         attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
 
         super().__init__(**attributes_with_defaults)
 
-        self.children = [Circle(cx="12.1", cy="12.1", r="1")]
+        self.children = [Circle(cx="12.1", cy="12.1", r="4")]
 
 
 class ExclamationTriangleIcon(BaseSVGIconElement):
@@ -208,6 +221,32 @@ class CirclePlusIcon(BaseSVGIconElement):
             Circle(cx="12", cy="12", r="10"),
             Path(d="M8 12h8"),
             Path(d="M12 8v8"),
+        ]
+
+
+class CircleAlertIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Circle(cx="12", cy="12", r="10"),
+            Line(x1="12", x2="12", y1="8", y2="12"),
+            Line(x1="12", x2="12.01", y1="16", y2="16"),
+        ]
+
+
+class CircleXIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Circle(cx="12", cy="12", r="10"),
+            Path(d="m15 9-6 6"),
+            Path(d="m9 9 6 6"),
         ]
 
 
