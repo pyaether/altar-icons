@@ -61,7 +61,7 @@ class SquareActivityIcon(BaseSVGIconElement):
         super().__init__(**attributes_with_defaults)
 
         self.children = [
-            Rect(width="18", height="18", x="3", y="3", rx="2"),
+            Rect(width="18", height="18", x="3", y="3", rx="2", ry="2"),
             Path(d="M17 12h-2l-2 5-2-10-2 5H7"),
         ]
 
