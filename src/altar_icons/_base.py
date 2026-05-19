@@ -21,12 +21,12 @@ class SVGIconAttributes(SvgAttributes):
     @classmethod
     def set_defaults(cls) -> dict:
         return {
-            "height": "16",
+            "height": "24",
             "fill": "none",
             "stroke": "currentColor",
             "stroke_width": "1.5",
             "stroke_linecap": "round",
             "stroke_linejoin": "round",
             "viewBox": "0 0 24 24",
-            "width": "16",
+            "width": "24",
         }

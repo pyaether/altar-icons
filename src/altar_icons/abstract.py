@@ -54,6 +54,34 @@ class ActivityIcon(BaseSVGIconElement):
         ]
 
 
+class SquareActivityIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Rect(width="18", height="18", x="3", y="3", rx="2"),
+            Path(d="M17 12h-2l-2 5-2-10-2 5H7"),
+        ]
+
+
+class ListIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Path(d="M3 5h.01"),
+            Path(d="M3 12h.01"),
+            Path(d="M3 19h.01"),
+            Path(d="M8 5h13"),
+            Path(d="M8 12h13"),
+            Path(d="M8 19h13"),
+        ]
+
+
 class CodeIcon(BaseSVGIconElement):
     def __init__(self, **attributes: Unpack[SVGIconAttributes]):
         attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
