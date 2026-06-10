@@ -175,6 +175,56 @@ class GlobeIcon(BaseSVGIconElement):
         ]
 
 
+class DownloadIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Path(d="M12 15V3"),
+            Path(d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"),
+            Path(d="m7 10 5 5 5-5"),
+        ]
+
+
+class CreditCardIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Rect(width="20", height="14", x="2", y="5", rx="2"),
+            Line(x1="2", x2="22", y1="10", y2="10"),
+        ]
+
+
+class MonitorIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Rect(width="20", height="14", x="2", y="3", rx="2"),
+            Line(x1="8", x2="16", y1="21", y2="21"),
+            Line(x1="12", x2="12", y1="17", y2="21"),
+        ]
+
+
+class SmartphoneIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Rect(width="14", height="20", x="5", y="2", rx="2", ry="2"),
+            Path(d="M12 18h.01"),
+        ]
+
+
 class CpuIcon(BaseSVGIconElement):
     def __init__(self, **attributes: Unpack[SVGIconAttributes]):
         attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}

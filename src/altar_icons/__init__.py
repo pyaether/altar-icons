@@ -66,7 +66,9 @@ from .objects import (
     ClockIcon,
     CopyIcon,
     CpuIcon,
+    CreditCardIcon,
     DatabaseIcon,
+    DownloadIcon,
     ExternalLinkIcon,
     EyeIcon,
     EyeOffIcon,
@@ -90,6 +92,7 @@ from .objects import (
     MailIcon,
     MessageSquareIcon,
     MicIcon,
+    MonitorIcon,
     NetworkIcon,
     PanelLeftIcon,
     PanelRightIcon,
@@ -99,6 +102,7 @@ from .objects import (
     SettingsIcon,
     Share2Icon,
     SlidersVerticalIcon,
+    SmartphoneIcon,
     TargetIcon,
     TrashIcon,
     Unlink2Icon,
@@ -110,7 +114,7 @@ from .objects import (
     WebsitesIcon,
 )
 
-__version__ = "0.4.6"
+__version__ = "0.4.7"
 __all__ = [
     "ActivityIcon",
     "ArrowDownIcon",
@@ -150,10 +154,12 @@ __all__ = [
     "CodeIcon",
     "CopyIcon",
     "CpuIcon",
+    "CreditCardIcon",
     "DatabaseIcon",
     "DollarSignIcon",
     "DotFilledIcon",
     "DotIcon",
+    "DownloadIcon",
     "EllipsisIcon",
     "ExclamationTriangleIcon",
     "ExternalLinkIcon",
@@ -184,6 +190,7 @@ __all__ = [
     "MailIcon",
     "MessageSquareIcon",
     "MicIcon",
+    "MonitorIcon",
     "MoveDownIcon",
     "MoveHorizontalIcon",
     "MoveLeftIcon",
@@ -202,6 +209,7 @@ __all__ = [
     "Share2Icon",
     "ShieldCheckIcon",
     "SlidersVerticalIcon",
+    "SmartphoneIcon",
     "SparklesIcon",
     "SquareActivityIcon",
     "SVGIconAttributes",
