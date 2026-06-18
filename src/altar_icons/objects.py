@@ -115,6 +115,20 @@ class BotIcon(BaseSVGIconElement):
         ]
 
 
+class CoinsIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Path(d="M13.744 17.736a6 6 0 1 1-7.48-7.48"),
+            Path(d="M15 6h1v4"),
+            Path(d="m6.134 14.768.866-.5 2 3.464"),
+            Circle(cx="16", cy="8", r="6"),
+        ]
+
+
 class SlidersVerticalIcon(BaseSVGIconElement):
     def __init__(self, **attributes: Unpack[SVGIconAttributes]):
         attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
@@ -195,7 +209,7 @@ class CreditCardIcon(BaseSVGIconElement):
         super().__init__(**attributes_with_defaults)
 
         self.children = [
-            Rect(width="20", height="14", x="2", y="5", rx="2"),
+            Rect(width="20", height="14", x="2", y="5", rx="2", ry="2"),
             Line(x1="2", x2="22", y1="10", y2="10"),
         ]
 
@@ -207,10 +221,19 @@ class MonitorIcon(BaseSVGIconElement):
         super().__init__(**attributes_with_defaults)
 
         self.children = [
-            Rect(width="20", height="14", x="2", y="3", rx="2"),
+            Rect(width="20", height="14", x="2", y="3", rx="2", ry="2"),
             Line(x1="8", x2="16", y1="21", y2="21"),
             Line(x1="12", x2="12", y1="17", y2="21"),
         ]
+
+
+class GaugeIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [Path(d="m12 14 4-4"), Path(d="M3.34 19a10 10 0 1 1 17.32 0")]
 
 
 class SmartphoneIcon(BaseSVGIconElement):

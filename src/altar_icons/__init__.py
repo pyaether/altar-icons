@@ -64,6 +64,7 @@ from .objects import (
     BrainCircuitIcon,
     CalendarIcon,
     ClockIcon,
+    CoinsIcon,
     CopyIcon,
     CpuIcon,
     CreditCardIcon,
@@ -76,6 +77,7 @@ from .objects import (
     FileTextIcon,
     FingerprintIcon,
     FolderIcon,
+    GaugeIcon,
     GavelIcon,
     GlobeIcon,
     IdCardIcon,
@@ -114,7 +116,7 @@ from .objects import (
     WebsitesIcon,
 )
 
-__version__ = "0.4.7"
+__version__ = "0.4.8"
 __all__ = [
     "ActivityIcon",
     "ArrowDownIcon",
@@ -152,6 +154,7 @@ __all__ = [
     "CirclePlusIcon",
     "CircleXIcon",
     "CodeIcon",
+    "CoinsIcon",
     "CopyIcon",
     "CpuIcon",
     "CreditCardIcon",
@@ -170,6 +173,7 @@ __all__ = [
     "FingerprintIcon",
     "FlameIcon",
     "FolderIcon",
+    "GaugeIcon",
     "GavelIcon",
     "GlobeIcon",
     "HamburgerMenuIcon",
