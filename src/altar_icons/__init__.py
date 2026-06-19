@@ -20,6 +20,7 @@ from .abstract import (
     EllipsisIcon,
     ExclamationTriangleIcon,
     FlameIcon,
+    FrownIcon,
     HamburgerMenuIcon,
     LayoutDashboardIcon,
     ListIcon,
@@ -117,7 +118,7 @@ from .objects import (
     WebsitesIcon,
 )
 
-__version__ = "0.4.9"
+__version__ = "0.4.10"
 __all__ = [
     "ActivityIcon",
     "ArrowDownIcon",
@@ -173,6 +174,7 @@ __all__ = [
     "FileTextIcon",
     "FingerprintIcon",
     "FlameIcon",
+    "FrownIcon",
     "FolderIcon",
     "GaugeIcon",
     "GavelIcon",

@@ -67,6 +67,20 @@ class ActivityIcon(BaseSVGIconElement):
         ]
 
 
+class FrownIcon(BaseSVGIconElement):
+    def __init__(self, **attributes: Unpack[SVGIconAttributes]):
+        attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
+
+        super().__init__(**attributes_with_defaults)
+
+        self.children = [
+            Circle(cx="12", cy="12", r="10"),
+            Path(d="M16 16s-1.5-2-4-2-4 2-4 2"),
+            Line(x1="9", x2="9.01", y1="9", y2="9"),
+            Line(x1="15", x2="15.01", y1="9", y2="9"),
+        ]
+
+
 class SquareActivityIcon(BaseSVGIconElement):
     def __init__(self, **attributes: Unpack[SVGIconAttributes]):
         attributes_with_defaults = {**SVGIconAttributes.set_defaults(), **attributes}
