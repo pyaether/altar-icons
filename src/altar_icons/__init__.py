@@ -25,6 +25,7 @@ from .abstract import (
     ListIcon,
     LoaderCircleIcon,
     PlusIcon,
+    PuzzleIcon,
     RefreshCWIcon,
     SearchIcon,
     ShieldCheckIcon,
@@ -116,7 +117,7 @@ from .objects import (
     WebsitesIcon,
 )
 
-__version__ = "0.4.8"
+__version__ = "0.4.9"
 __all__ = [
     "ActivityIcon",
     "ArrowDownIcon",
@@ -205,6 +206,7 @@ __all__ = [
     "PanelRightIcon",
     "PencilIcon",
     "PlusIcon",
+    "PuzzleIcon",
     "RefreshCWIcon",
     "SearchIcon",
     "SendHorizontalIcon",
